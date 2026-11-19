@@ -1,0 +1,9 @@
+{
+  "name": "Float practice (Java 21 + Maven)",
+  "image": "mcr.microsoft.com/devcontainers/java:1-21",
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": { "version": "none", "installMaven": "true" }
+  },
+  "customizations": { "vscode": { "extensions": ["vscjava.vscode-java-pack"] } },
+  "postCreateCommand": "mvn -q -DskipTests test-compile"
+}
